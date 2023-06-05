@@ -33,7 +33,7 @@ form.addEventListener('submit', (event) => {
             document.querySelector('.check').textContent =
                 `Ваше замовлення: 
             П.І.П.: ${values.full_name}
-            Місто: ${values.Місто}
+            , Місто: ${values.Місто}
             , Відділення НП: ${values.Відділення_НП}
             , Форма оплати: ${values.pay}
             , Кількість: ${values.quantity} шт.`
