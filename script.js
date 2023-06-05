@@ -27,15 +27,16 @@ form.addEventListener('submit', (event) => {
             error.style.display = 'block';
             break;
         } else {
+            error.style.display = 'none';
             console.log(values);
             body.insertBefore(divEl, error);
-            document.querySelector('.check').innerHTML = 
-            `Ваше замовлення: \n
-            П.І.П.: ${values.full_name}<br/>
-            Місто: ${values.Місто}<br/>
-            Відділення НП: ${values.Відділення_НП}<br/>
-            Форма оплати: ${values.pay}<br/>
-            Кількість: ${values.quantity} шт.`
+            document.querySelector('.check').textContent =
+                `Ваше замовлення: \n
+            П.І.П.: ${values.full_name}
+            Місто: ${values.Місто}
+            , Відділення НП: ${values.Відділення_НП}
+            , Форма оплати: ${values.pay}
+            , Кількість: ${values.quantity} шт.`
             break;
         };
     };
