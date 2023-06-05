@@ -31,7 +31,7 @@ form.addEventListener('submit', (event) => {
             console.log(values);
             body.insertBefore(divEl, error);
             document.querySelector('.check').textContent =
-                `Ваше замовлення: \n
+                `Ваше замовлення: 
             П.І.П.: ${values.full_name}
             Місто: ${values.Місто}
             , Відділення НП: ${values.Відділення_НП}
